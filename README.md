@@ -10,6 +10,7 @@ This project compares the execution performance of Python UDFs vs. Scala UDFs in
 Why compare Python and Scala UDFs?
 
 Python UDFs run in a separate process, leading to inter-process communication overhead.
+Pyspark wrapper will call Java wrapper using the **PY4J** connection allows a python application to call a Java application, and the Java wrapper runs Scala core in JVM.
 
 Scala UDFs run directly in the JVM, providing better performance.
 
@@ -48,7 +49,7 @@ sudo apt-get install sbt
 * Building and packaging JAR files
 * Running tests and applications
 
-### Why do we need sbt in this project?
+**Why do we need sbt in this project?**
 We used sbt to compile and package the Scala UDF into a JAR file.
 The JAR file is then loaded into PySpark, allowing us to use the Scala UDF in our PySpark application.
 
