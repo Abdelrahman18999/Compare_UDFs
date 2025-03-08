@@ -41,6 +41,18 @@ sudo apt-get update
 sudo apt-get install sbt
 ```
 
+**sbt (Scala Build Tool) is a build tool for Scala and Java projects, similar to Maven or Gradle. It is primarily used for:**
+
+* Compiling Scala/Java code
+* Managing dependencies (like Spark libraries)
+* Building and packaging JAR files
+* Running tests and applications
+
+### Why do we need sbt in this project?
+We used sbt to compile and package the Scala UDF into a JAR file.
+The JAR file is then loaded into PySpark, allowing us to use the Scala UDF in our PySpark application.
+
+
 ## 2. Create an sbt Project
 
 Navigate to your working directory and initialize an sbt project:
