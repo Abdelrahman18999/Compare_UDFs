@@ -1,6 +1,6 @@
 # Comparing Python and Scala UDFs in PySpark
 
-This project compares the execution performance of Python UDFs vs. Scala UDFs in PySpark by measuring the execution time of a simple function applied to a large dataset.
+This pyspark application compares the execution performance of Python UDFs vs. Scala UDFs in PySpark by measuring the execution time of a simple function applied to a large dataset.
 
 ![UDF](https://docs.aws.amazon.com/images/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/worker-nodes.png)
 
