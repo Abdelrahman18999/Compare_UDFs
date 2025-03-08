@@ -120,7 +120,7 @@ Navigate to your project directory and create a Python script
 ## 7. Run the PySpark Application
 
 Execute the script:
-```python compare_udfs.py```
+```spark-submit --jars target/scala-2.12/udf_2.12-0.1.0-SNAPSHOT.jar compare_udfs.py```
 
 # Ecpected Output
 ```
