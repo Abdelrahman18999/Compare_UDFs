@@ -14,6 +14,8 @@ Pyspark wrapper will call Java wrapper using the **PY4J** connection allows a py
 
 Scala UDFs run directly in the JVM, providing better performance.
 
+**NOTE-** Scala/Java UDFs not faster than Python UDF in all cases but the majority yes.
+
 This guide will walk you through setting up and testing both UDFs step by step.
 
 ## 1. Prerequisites
@@ -122,8 +124,8 @@ Navigate to your project directory and create a Python script
 Execute the script:
 ```spark-submit --jars target/scala-2.12/udf_2.12-0.1.0-SNAPSHOT.jar compare_udfs.py```
 
-# Ecpected Output
+# Expected Output
 ```
-Scala UDF execution time: 2.3 seconds
-Python UDF execution time: 10.5 seconds
+Scala UDF execution time: 4.6415 seconds
+Python UDF execution time: 0.8573 seconds
 ```
